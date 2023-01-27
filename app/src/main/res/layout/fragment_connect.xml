@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/brown_background"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/oren"
+        android:layout_marginTop="254dp"
+        android:gravity="center_horizontal"
+        android:text="MDC Insurance"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="401dp"
+        android:layout_height="108dp"
+        android:layout_below="@id/label"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/oren"
+        android:gravity="center_horizontal"
+        android:text="MDC Insurance adalah aplikasi sistem asuransi kesehatan berbasis android yang diharapkan bisa menjadi suatu ide  pengembangan pada menu pembelian bagian asuransi di M2U (Aplikasi mobile banking Maybank). "
+        android:textSize="16sp" />
+
+
+
+
+</RelativeLayout>

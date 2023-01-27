@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F8EEEC"
+    tools:context=".maps.MapsActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/titleRL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/top_background"
+            android:bottomRightRadius="40dp"
+            android:bottomLeftRadius="40dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/titleTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Find Hospital"
+                android:layout_marginTop="0dp"
+                android:textSize="24sp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                />
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_back" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/mapsRL"
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:layout_below="@id/titleRL">
+            <org.osmdroid.views.MapView
+                android:id="@+id/mapsMV"
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="50dp"/>
+        </RelativeLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/latitude"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/mapsRL"
+            android:gravity="center"
+            app:hintEnabled="false"
+            android:layout_marginStart="20dp">
+
+            <EditText
+                android:id="@+id/latitudeET"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/shape_edittext"
+                android:hint="Latitude"
+                android:paddingStart="15dp"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:fontFamily="sans-serif-condensed">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/longitude"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            app:hintEnabled="false"
+            android:layout_below="@id/latitude"
+            android:layout_marginStart="20dp">
+
+            <EditText
+                android:id="@+id/longitudeET"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/shape_edittext"
+                android:hint="Longitude"
+                android:paddingStart="15dp"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:fontFamily="sans-serif-condensed">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <android.widget.Button
+            android:id="@+id/goBtn"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/longitude"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:background="#EF6C00"
+            android:radius="10dp"
+            android:text="Go"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed"/>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "169635367584",
+    "firebase_url": "https://mdc-insurance-57771-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "mdc-insurance-57771",
+    "storage_bucket": "mdc-insurance-57771.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169635367584:android:3121c4ee019b9a3a5397c5",
+        "android_client_info": {
+          "package_name": "com.example.insuranceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169635367584-dol5pha0gk9p1p3218cktqfjs80dup03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkxr3-_sw1Z3d2DUiXILB6MiVHm6aotR8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169635367584-dol5pha0gk9p1p3218cktqfjs80dup03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

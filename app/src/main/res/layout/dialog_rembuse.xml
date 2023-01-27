@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imagetNota"
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            app:srcCompat="@drawable/ic_handshake" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center"
+            android:text="Email"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvEmailRembuse"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center"
+            android:text="Nama"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNamaRembuse"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center"
+            android:text="Total Reimbuse"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvJumlahRembuse"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:gravity="center"
+            android:text="Status"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerStatusRembuse"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:entries="@array/statusRembuse" />
+
+        <Button
+            android:id="@+id/btnSimpanRembuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simpan" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
